@@ -1,1 +1,38 @@
 
+# Create the nmap_scan_results.txt file with the finalized scan output content
+
+content = """Nmap Version: 7.95
+Platform: Kali Linux (x86_64)
+
+Target Information:
+Hostname: kali.lan
+IP Address: 192.168.31.85
+
+Scan Commands Used:
+1) nmap 192.168.31.85
+2) nmap -sV 192.168.31.85
+3) nmap -sS -sV -O 192.168.31.85
+
+Scan Results:
+Host is up with very low latency.
+All 1000 commonly scanned TCP ports are closed.
+No open ports or active network services were detected.
+
+OS Detection:
+OS detection was inconclusive due to the absence of open ports.
+
+Security Analysis:
+- No exposed services reduce the attack surface.
+- Closed ports prevent common attacks such as brute-force and service exploitation.
+- Indicates a secure default system configuration.
+
+Conclusion:
+The Nmap scan confirms that the target system does not expose any active network services.
+This scan was performed on a local machine for educational purposes only.
+"""
+
+file_path = "/mnt/data/nmap_scan_results.txt"
+with open(file_path, "w") as f:
+    f.write(content)
+
+file_path
