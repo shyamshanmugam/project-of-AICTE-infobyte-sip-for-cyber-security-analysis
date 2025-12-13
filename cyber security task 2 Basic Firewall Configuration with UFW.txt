@@ -1,0 +1,33 @@
+# Task 2: Basic Firewall Configuration with UFW
+
+## Objective
+To configure a basic firewall using UFW on a Linux system by allowing SSH access and denying HTTP traffic.
+
+## Tool Used
+- UFW (Uncomplicated Firewall)
+- Operating System: Linux (Ubuntu/Kali)
+
+## Steps Performed
+
+### 1. Installed UFW
+UFW was installed using the system package manager.
+
+### 2. Configured Firewall Rules
+- Allowed SSH (Port 22) to ensure secure remote access.
+- Denied HTTP (Port 80) to block web traffic.
+
+### 3. Enabled Firewall
+The firewall was enabled to enforce the configured rules.
+
+### 4. Verified Firewall Status
+The firewall status was checked to confirm that the rules were active and correctly applied.
+
+## Security Significance
+- Allowing SSH ensures secure remote administration.
+- Denying HTTP prevents unauthorized web service access.
+- Firewalls reduce the system’s attack surface.
+
+## Conclusion
+This task demonstrates the use of UFW to implement basic firewall rules and improve system security.
+
+*Note: Configuration performed on a local system for educational purposes only.*
